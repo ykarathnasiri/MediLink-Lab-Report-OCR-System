@@ -13,7 +13,7 @@ client = documentai.DocumentProcessorServiceClient()
 DOCUMENT_AI_PROCESSOR = "projects/947476598105/locations/us/processors/c221ae91df258460"
 
 # Configure Gemini AI
-GENAI_API_KEY = "AIzaSyC3sz1Y5ch3j5NHMS3yauHaWS2XfgOrukc"
+GENAI_API_KEY = "YOUR_GEMINI_API_KEY"
 genai.configure(api_key=GENAI_API_KEY)
 model = genai.GenerativeModel("gemini-2.0-flash")
 
@@ -116,5 +116,6 @@ async def process_lab_report(file: UploadFile = File(...)) -> Dict:
     except Exception as e:
         return {"status": "error", "message": str(e)}
     
+
 
 # uvicorn main:app --reload 
