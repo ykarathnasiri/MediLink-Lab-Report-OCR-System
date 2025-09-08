@@ -63,7 +63,7 @@ MediLink is an intelligent medical lab report processing system that leverages c
 
 ```bash
 # Navigate to your project directory
-cd "d:\1. UNI\Projects\Lab report OCR\MediLink\Lab report OCR"
+cd "path\to\your\project directory"
 
 # Create and activate virtual environment
 python -m venv venv
@@ -393,5 +393,6 @@ venv\Scripts\activate
 - Verify Content-Type header
 - Ensure file is not corrupted
 - Test with sample images from `/data/` folder
+
 
 ### Performance Optimization
